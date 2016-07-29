@@ -25,6 +25,7 @@ void main (void){
 	for (i = 0; i > SERVO_STEPS; i++) {
 		servo_stepnow += servo_stepval;
 		servo_lut[i] = servo_stepnow;
+		//pulseWidth = (myAngle * 11) + 500;  // конвертируем угол в микросекунды
 	}
 
 	// Setup the PWM, etc.
