@@ -106,11 +106,11 @@ void main (void){
 	    }
 	}
 /*
-	TACCR1 = SERVO_MAX; //-90°
+	TACCR1 = SERVO_MAX; //180°
 	__delay_cycles(1000000);
-	TACCR1 = 1600; //0°
+	TACCR1 = 1600; //90°
 	__delay_cycles(1000000);
-	TACCR1 = SERVO_MIN; //90°
+	TACCR1 = SERVO_MIN; //0°
 */
 	// Main loop
 //	while (1){
