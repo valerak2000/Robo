@@ -11,6 +11,9 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./main.obj" \
+"./main1.obj" \
+"./main2.obj" \
+"./main3.obj" \
 "../lnk_msp430g2533.cmd" \
 $(GEN_CMDS__FLAG) \
 -l"libc.a" \
@@ -149,8 +152,8 @@ servoStarWars.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "main.pp" 
-	-$(RM) "main.obj" 
+	-$(RM) "main.pp" "main1.pp" "main2.pp" "main3.pp" 
+	-$(RM) "main.obj" "main1.obj" "main2.obj" "main3.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
